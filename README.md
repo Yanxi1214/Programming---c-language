@@ -17,12 +17,92 @@
 int main() 
 {
     float a, b, sum;
-    printf("a:1.2");
+    printf("Enter first number: ");
     scanf("%f", &a);
-    printf("b:3.4");
+    printf("Enter second number: ");
     scanf("%f", &b);
     sum = a + b;
     printf("Sum: %.2f\n", sum);
     return 0;
 }
 ###
+
+
+
+
+
+## 1.3: Вычисление выражения u(x,y) 
+**Список идентификаторов**:
+| Имя переменной | Тип данных | Описание
+| -------------- | ---------- | --------
+| x              | double     | Аргумент x
+| y              | double     | Аргумент y
+| sin_xy         | double     | sin(x+y)
+| numerator      | double     | Числитель выражения
+| denominator    | double     | Знаменатель выражения
+| result         | double     | Результат u(x,y)
+
+**Код программы**：
+
+#include <stdio.h>
+#include <math.h>
+
+int main() 
+{
+    double x, y, sin_xy, numerator, denominator, result;
+    printf("Enter x: ");
+    scanf("%lf", &x);
+    printf("Enter y: ");
+    scanf("%lf", &y);
+    
+    sin_xy = sin(x + y);
+    numerator = 1 + pow(sin_xy, 2);
+    denominator = 2 + fabs(x - (2 * pow(x, 2)) / (1 + fabs(sin_xy));
+    result = numerator / denominator;
+    
+    printf("u(x, y) = %.4f\n", result);
+    return 0;
+}
+
+
+## 1.4: Вычисление h(x)
+
+**Параметры**:
+1. a=0.12,b=3.5,c=2.4,x=1.4
+2. a=0.12,b=3.5,c=2.4,x=1.6
+3. a=0.27,b=3.9,c=2.8,x=1.8
+
+**Код программы**：
+
+#include <stdio.h>
+#include <math.h>
+
+int main() 
+{
+    double a, b, c, x, h;
+    
+    // Первый случай
+    a = 0.12; b = 3.5; c = 2.4; x = 1.4;
+    h = -(x - a) / cbrt(pow(x, 2) + pow(a, 2)) 
+        - (4 * cbrt(pow(pow(x, 2) + pow(b, 2), 3))) 
+        / (2 + a + b + cbrt(pow(x - c, 2)));
+    printf("Case 1: h(x) = %.4f\n", h);
+    
+    // Второй случай
+    x = 1.6;
+    h = -(x - a) / cbrt(pow(x, 2) + pow(a, 2)) 
+        - (4 * cbrt(pow(pow(x, 2) + pow(b, 2), 3))) 
+        / (2 + a + b + cbrt(pow(x - c, 2)));
+    printf("Case 2: h(x) = %.4f\n", h);
+    
+    // Третий случай
+    a = 0.27; b = 3.9; c = 2.8; x = 1.8;
+    h = -(x - a) / cbrt(pow(x, 2) + pow(a, 2)) 
+        - (4 * cbrt(pow(pow(x, 2) + pow(b, 2), 3))) 
+        / (2 + a + b + cbrt(pow(x - c, 2)));
+    printf("Case 3: h(x) = %.4f\n", h);
+    
+    return 0;
+}
+
+
