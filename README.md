@@ -14,18 +14,18 @@
 | sum            | float     | Сумма чисел  |
 
 
-#include <stdio.h>\
+#include <stdio.h>
 
 int main() \
 {
-    float a, b, sum;
-    printf("Enter first number: ");
-    scanf("%f", &a);
-    printf("Enter second number: ");
-    scanf("%f", &b);
-    sum = a + b;
-    printf("Sum: %.2f\n", sum);
-    return 0;
+    float a, b, sum;\
+    printf("Enter first number: ");\
+    scanf("%f", &a);\
+    printf("Enter second number: ");\
+    scanf("%f", &b);\
+    sum = a + b;\
+    printf("Sum: %.2f\n", sum);\
+    return 0;\
 }
 
 ![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/1.2.bmp))
