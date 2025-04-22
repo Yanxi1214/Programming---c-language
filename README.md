@@ -25,10 +25,8 @@ int main()
     printf("Sum: %.2f\n", sum);
     return 0;
 }
-###
-
-
-
+**Процедурные результаты**：
+![image](https://raw.githubusercontent.com/Yanxi1214/Programming---c-language/refs/heads/Laboratory-work-I/1.bmp)
 
 
 ## 1.3: Вычисление выражения u(x,y) 
