@@ -11,11 +11,12 @@
 | y              | double[]   | Результирующий вектор |
 
 
+
 #include <stdio.h>  
 #define SIZE 5  
 
 int main()\
-{  
+{\  
     double X[SIZE], Y[SIZE];  
     printf("Введите %d элементов X: ", SIZE);  
     for (int i = 0; i < SIZE; i++) 
