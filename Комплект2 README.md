@@ -11,7 +11,6 @@ $x = r_1 \cos(\omega_1 t) - r_2 \cos(\omega_2 t)$
 $y = r_1 \sin(\omega_1 t) - r_2 \sin(\omega_2 t)$.  
 
 **Математическая модель**:
-
 $$  
 \begin{aligned}  
 \omega_1 &= \frac{2\pi}{T_1}, \\  
@@ -64,7 +63,6 @@ int main()
 ## 2.2: Интеграл методом трапеций
 
 **Математическая модель**:
-
 $$  
 \int_a^b f(x) dx \approx \frac{h}{2} \left[ f(a) + f(b) \right] + h \sum_{i=1}^{n-1} f(a + i h), \quad h = \frac{b - a}{n}.  
 $$  
