@@ -51,10 +51,51 @@ int main()
         double y = r1 * sin(w1 * t) - r2 * sin(w2 * t);  
         printf("t = %d дн: x = %.2f км, y = %.2f км\n", t, x, y);  
     }  
-
-    ![image]
     return 0;  
 }  
 
-https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/capture_2.1.bmp
+![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/capture_2.1.bmp)
 
+
+
+## 2.2: Интеграл методом трапеций
+
+**Математическая модель**:
+$$  
+\int_a^b f(x) dx \approx \frac{h}{2} \left[ f(a) + f(b) \right] + h \sum_{i=1}^{n-1} f(a + i h), \quad h = \frac{b - a}{n}.  
+$$  
+
+**Список идентификаторов**:
+| Имя переменной | Тип данных | Описание                      |
+| -------------- | ---------- | ----------------------------- |
+| a              | double     | Нижний предел интегрирования  |
+| b              | double     | Верхний предел интегрирования |
+| n              | int        | Количество интервалов         |
+| h              | double     | Шаг интегрирования            |
+
+**Код программы**:
+
+#include <stdio.h>  
+#include <math.h>  
+
+double f(double x) 
+{  
+    return exp(x + 2);  
+}  
+
+int main() 
+{  
+    double a = 0.0, b = 1.0;  
+    int n = 1000;  
+    double h = (b - a) / n;  
+    double sum = 0.5 * (f(a) + f(b));  
+
+    for (int i = 1; i < n; i++) 
+    {  
+        sum += f(a + i * h);  
+    }  
+    sum *= h;  
+
+    printf("∫₀¹ e^(x+2) dx ≈ %.6f\n", sum);  
+    return 0;  
+}  
