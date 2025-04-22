@@ -27,8 +27,7 @@ $$
 | T2             | double     | Период обращения Земли (дни) |
 | t              | int        | Момент времени (дни)         |
 
-
-**Код программы**:
+**Код**:
 
 #include <stdio.h>  
 #include <math.h>  
@@ -73,7 +72,7 @@ $$
 | n              | int        | Количество интервалов         |
 | h              | double     | Шаг интегрирования            |
 
-**Код программы**:
+**Код**:
 
 #include <stdio.h>  
 #include <math.h>  
@@ -99,6 +98,7 @@ int main()
     printf("∫₀¹ e^(x+2) dx ≈ %.6f\n", sum);  
     return 0;  
 }  
+
 ![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/2.2.bmp)
 
 
@@ -116,7 +116,8 @@ P(0)=P(1)=P(2)=1,P(n)=P(n−2)+P(n−3).
 | p_prev3        | int        | P(n-3)         |
 | p_prev2        | int        | P(n-2)         |
 
-**Код программы**:
+**Код**:
+
 #include <stdio.h>  
 
 int main() 
@@ -139,3 +140,36 @@ int main()
     }  
     return 0;  
 }  
+
+![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/2.3.bmp)
+
+
+
+## 2.4: Сумма цифр трёхзначного числа
+
+**Постановка задачи**:
+Вводить трёхзначные числа до тех пор, пока сумма их цифр не станет ≤ 10.
+
+**писок идентификаторов**:
+| Имя переменной | Тип данных | Описание        |
+| -------------- | ---------- | --------------- |
+| num            | int        | Введённое число |
+| sum            | int        | Сумма цифр      |
+
+**Код**:
+#include <stdio.h>  
+
+int main() 
+{  
+    int num, sum;  
+    do 
+    {  
+        printf("Введите трёхзначное число: ");  
+        scanf("%d", &num);  
+        sum = (num / 100) + (num / 10 % 10) + (num % 10);  
+    } while (sum > 10);  
+    printf("Сумма цифр = %d. Программа завершена.\n", sum);  
+    return 0;  
+}  
+
+![image]
