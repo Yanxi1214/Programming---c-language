@@ -14,7 +14,7 @@
 | sum            | float     | Сумма чисел  |
 
 
-#include <stdio.h>
+#include <stdio.h>\
 
 int main() 
 {
