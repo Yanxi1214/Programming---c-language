@@ -18,7 +18,7 @@ int main()\
 {  
     double X[SIZE], Y[SIZE];  
     printf("Введите %d элементов X: ", SIZE);  
-    for (int i = 0; i < SIZE; i++) 
+    for (int i = 0; i < SIZE; i++)\ 
     {  
         scanf("%lf", &X[i]);  
         Y[i] = X[i] * X[i];  
