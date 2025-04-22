@@ -51,7 +51,10 @@ int main()
         double y = r1 * sin(w1 * t) - r2 * sin(w2 * t);  
         printf("t = %d дн: x = %.2f км, y = %.2f км\n", t, x, y);  
     }  
+
+    ![image]
     return 0;  
 }  
 
+https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/capture_2.1.bmp
 
