@@ -59,7 +59,6 @@ int main()
 
 ## 2.2: Интеграл методом трапеций
 
-**Математическая модель**:
 $$  
 \int_a^b f(x) dx \approx \frac{h}{2} \left[ f(a) + f(b) \right] + h \sum_{i=1}^{n-1} f(a + i h), \quad h = \frac{b - a}{n}.  
 $$  
