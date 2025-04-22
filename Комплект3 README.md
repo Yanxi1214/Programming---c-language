@@ -14,7 +14,7 @@
 #include <stdio.h>\  
 #define SIZE 5  
 
-int main()\ 
+int main()\
 {\  
     double X[SIZE], Y[SIZE];  
     printf("Введите %d элементов X: ", SIZE);  
