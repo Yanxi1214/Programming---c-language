@@ -15,8 +15,8 @@
 #include <stdio.h>  
 #define SIZE 5  
 
-int main()\
-{\  
+int main()
+{  
     double X[SIZE], Y[SIZE];  
     printf("Введите %d элементов X: ", SIZE);  
     for (int i = 0; i < SIZE; i++) 
@@ -45,11 +45,11 @@ int main()\
 | x              | int[]      | Исходный массив |
 
 
-#include <stdio.h>\  
+#include <stdio.h>  
 #define SIZE 5  
 
-int main()\ 
-{\  
+int main() 
+{  
     int X[SIZE];  
     printf("Введите %d элементов: ", SIZE);  
     for (int i = 0; i < SIZE; i++) scanf("%d", &X[i]);  
