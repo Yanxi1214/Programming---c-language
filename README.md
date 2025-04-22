@@ -13,7 +13,6 @@
 | b              | float     | Второе число |
 | sum            | float     | Сумма чисел  |
 
-**Код**:
 
 #include <stdio.h>
 
@@ -44,7 +43,6 @@ int main()
 | denominator    | double     | Знаменатель выражения
 | result         | double     | Результат u(x,y)
 
-**Код**：
 
 #include <stdio.h>
 #include <math.h>
@@ -76,7 +74,6 @@ int main()
 2. a=0.12,b=3.5,c=2.4,x=1.6
 3. a=0.27,b=3.9,c=2.8,x=1.8
 
-**Код программы**：
 
 #include <stdio.h>
 #include <math.h>
