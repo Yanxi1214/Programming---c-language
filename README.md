@@ -103,4 +103,5 @@ int main()
     return 0;
 }
 
+![image](https://raw.githubusercontent.com/Yanxi1214/Programming---c-language/refs/heads/Laboratory-work-I/1.4.bmp)
 
