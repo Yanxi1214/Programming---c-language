@@ -26,7 +26,7 @@ int main()
     return 0;
 }
 **Процедурные результаты**：
-![image](https://raw.githubusercontent.com/Yanxi1214/Programming---c-language/refs/heads/Laboratory-work-I/1.bmp)
+![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/1.2.bmp))
 
 
 ## 1.3: Вычисление выражения u(x,y) 
