@@ -11,11 +11,11 @@
 | y              | double[]   | Результирующий вектор |
 
 
-#include <stdio.h>  
+#include <stdio.h>\  
 #define SIZE 5  
 
-int main() 
-{  
+int main()\ 
+{\  
     double X[SIZE], Y[SIZE];  
     printf("Введите %d элементов X: ", SIZE);  
     for (int i = 0; i < SIZE; i++) 
@@ -29,3 +29,7 @@ int main()
     printf("]\n");  
     return 0;  
 }  
+
+![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/3.1.bmp)
+
+
