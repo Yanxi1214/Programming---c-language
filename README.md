@@ -55,13 +55,14 @@ int main()
     
     sin_xy = sin(x + y);
     numerator = 1 + pow(sin_xy, 2);
-    denominator = 2 + fabs(x - (2 * pow(x, 2)) / (1 + fabs(sin_xy));
+    denominator = 2 + fabs(x - (2 * pow(x, 2)) / (1 + fabs(sin_xy))); // 修复括号
     result = numerator / denominator;
     
     printf("u(x, y) = %.4f\n", result);
     return 0;
 }
 
+![image](https://github.com/Yanxi1214/Programming---c-language/edit/Laboratory-work-I/1.3.bmp)
 
 ## 1.4: Вычисление h(x)
 
