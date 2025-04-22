@@ -17,7 +17,7 @@
 #include <stdio.h>
 
 int main() \
-{   \
+{\
     float a, b, sum;\
     printf("Enter first number: ");\
     scanf("%f", &a);\
@@ -44,24 +44,24 @@ int main() \
 | result         | double     | Результат u(x,y)
 
 
-#include <stdio.h>
+#include <stdio.h>\
 #include <math.h>
 
-int main() 
-{
-    double x, y, sin_xy, numerator, denominator, result;
-    printf("Enter x: ");
-    scanf("%lf", &x);
-    printf("Enter y: ");
-    scanf("%lf", &y);
+int main() \
+{\
+    double x, y, sin_xy, numerator, denominator, result;\
+    printf("Enter x: ");\
+    scanf("%lf", &x);\
+    printf("Enter y: ");\
+    scanf("%lf", &y);\
     
-    sin_xy = sin(x + y);
-    numerator = 1 + pow(sin_xy, 2);
-    denominator = 2 + fabs(x - (2 * pow(x, 2)) / (1 + fabs(sin_xy))); // 修复括号
+    sin_xy = sin(x + y);\
+    numerator = 1 + pow(sin_xy, 2);\
+    denominator = 2 + fabs(x - (2 * pow(x, 2)) / (1 + fabs(sin_xy))); // 修复括号\
     result = numerator / denominator;
     
-    printf("u(x, y) = %.4f\n", result);
-    return 0;
+    printf("u(x, y) = %.4f\n", result);\
+    return 0;\
 }
 
 ![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/1.3.bmp)
@@ -75,35 +75,35 @@ int main()
 3. a=0.27,b=3.9,c=2.8,x=1.8
 
 
-#include <stdio.h>
+#include <stdio.h>\
 #include <math.h>
 
-int main() 
-{
+int main() \
+{\
     double a, b, c, x, h;
     
     // Первый случай
-    a = 0.12; b = 3.5; c = 2.4; x = 1.4;
-    h = -(x - a) / cbrt(pow(x, 2) + pow(a, 2)) 
-        - (4 * cbrt(pow(pow(x, 2) + pow(b, 2), 3))) 
-        / (2 + a + b + cbrt(pow(x - c, 2)));
-    printf("Case 1: h(x) = %.4f\n", h);
+    a = 0.12; b = 3.5; c = 2.4; x = 1.4;\
+    h = -(x - a) / cbrt(pow(x, 2) + pow(a, 2)) \
+        - (4 * cbrt(pow(pow(x, 2) + pow(b, 2), 3))) \
+        / (2 + a + b + cbrt(pow(x - c, 2)));\
+    printf("Case 1: h(x) = %.4f\n", h);\
     
     // Второй случай
-    x = 1.6;
-    h = -(x - a) / cbrt(pow(x, 2) + pow(a, 2)) 
-        - (4 * cbrt(pow(pow(x, 2) + pow(b, 2), 3))) 
-        / (2 + a + b + cbrt(pow(x - c, 2)));
-    printf("Case 2: h(x) = %.4f\n", h);
+    x = 1.6;\
+    h = -(x - a) / cbrt(pow(x, 2) + pow(a, 2)) \
+        - (4 * cbrt(pow(pow(x, 2) + pow(b, 2), 3)))\ 
+        / (2 + a + b + cbrt(pow(x - c, 2)));\
+    printf("Case 2: h(x) = %.4f\n", h);\
     
     // Третий случай
-    a = 0.27; b = 3.9; c = 2.8; x = 1.8;
-    h = -(x - a) / cbrt(pow(x, 2) + pow(a, 2)) 
-        - (4 * cbrt(pow(pow(x, 2) + pow(b, 2), 3))) 
-        / (2 + a + b + cbrt(pow(x - c, 2)));
-    printf("Case 3: h(x) = %.4f\n", h);
+    a = 0.27; b = 3.9; c = 2.8; x = 1.8;\
+    h = -(x - a) / cbrt(pow(x, 2) + pow(a, 2))\
+        - (4 * cbrt(pow(pow(x, 2) + pow(b, 2), 3)))\
+        / (2 + a + b + cbrt(pow(x - c, 2)));\
+    printf("Case 3: h(x) = %.4f\n", h);\
     
-    return 0;
+    return 0;\
 }
 
 ![image](https://raw.githubusercontent.com/Yanxi1214/Programming---c-language/refs/heads/Laboratory-work-I/1.4.bmp)
