@@ -99,3 +99,43 @@ int main()
     printf("∫₀¹ e^(x+2) dx ≈ %.6f\n", sum);  
     return 0;  
 }  
+![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/2.2.bmp)
+
+
+
+##  2.3: Числа Падована
+
+**Постановка задачи**:
+Распечатать последовательность чисел Падована, не превосходящих m. Формулы:
+P(0)=P(1)=P(2)=1,P(n)=P(n−2)+P(n−3).
+
+**Список идентификаторов**:
+| Имя переменной | Тип данных | Описание       |
+| -------------- | ---------- | -------------- |
+| m              | int        | Верхний предел |
+| p_prev3        | int        | P(n-3)         |
+| p_prev2        | int        | P(n-2)         |
+
+**Код программы**:
+#include <stdio.h>  
+
+int main() 
+{  
+    int m;  
+    printf("Введите m: ");  
+    scanf("%d", &m);  
+
+    int p_prev3 = 1, p_prev2 = 1, p_prev1 = 1;  
+    printf("1 1 1 ");  
+
+    for (int n = 3; ; n++) 
+    {  
+        int p = p_prev2 + p_prev3;  
+        if (p > m) break;  
+        printf("%d ", p);  
+        p_prev3 = p_prev2;  
+        p_prev2 = p_prev1;  
+        p_prev1 = p;  
+    }  
+    return 0;  
+}  
