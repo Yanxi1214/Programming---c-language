@@ -62,7 +62,7 @@ int main()
     return 0;
 }
 
-![image](https://github.com/Yanxi1214/Programming---c-language/edit/Laboratory-work-I/1.3.bmp)
+![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/1.3.bmp)
 
 ## 1.4: Вычисление h(x)
 
