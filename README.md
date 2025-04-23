@@ -75,8 +75,8 @@ int main() \
 3. a=0.27,b=3.9,c=2.8,x=1.8
 
 
-$$\  
-h(x) = -\frac{x - a}{\sqrt[3]{x^2 + a^2}} - \frac{4\sqrt[3]{(x^2 + b^2)^3}}{2 + a + b + \sqrt[3]{(x - c)^2}}.\  
+$$  
+h(x) = -\frac{x - a}{\sqrt[3]{x^2 + a^2}} - \frac{4\sqrt[3]{(x^2 + b^2)^3}}{2 + a + b + \sqrt[3]{(x - c)^2}}.  
 $$  
 
 
