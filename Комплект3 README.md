@@ -142,7 +142,7 @@ int main()
 }  
 
 
-
+![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/3.4.bmp)
 
 
 ## 3.5: Сортировка вставками
