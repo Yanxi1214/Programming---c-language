@@ -26,7 +26,7 @@
 | b              | float     | Второе число |
 | sum            | float     | Сумма чисел  |
 
-
+```c
 #include <stdio.h>
 
 int main() \
