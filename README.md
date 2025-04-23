@@ -66,7 +66,7 @@ int main() \
     printf("Enter x: ");\
     scanf("%lf", &x);\
     printf("Enter y: ");\
-    scanf("%lf", &y);\
+    scanf("%lf", &y);
     
     sin_xy = sin(x + y);
     numerator = 1 + pow(sin_xy, 2);
