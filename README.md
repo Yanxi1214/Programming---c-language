@@ -44,6 +44,8 @@ int main() \
 ![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/1.2.bmp))
 
 
+
+
 ## 1.3: Вычисление выражения u(x,y) 
 
 ### Список идентификаторов:
@@ -57,6 +59,7 @@ int main() \
 | result         | double     | Результат u(x,y)
 
 
+```c
 #include <stdio.h>\
 #include <math.h>
 
@@ -77,7 +80,11 @@ int main() \
     return 0;
 }
 
+
 ![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/1.3.bmp)
+
+
+
 
 ## 1.4: Вычисление h(x)
 
@@ -92,6 +99,7 @@ $$
 h(x) = -\frac{x - a}{\sqrt[3]{x^2 + a^2}} - \frac{4\sqrt[3]{(x^2 + b^2)^3}}{2 + a + b + \sqrt[3]{(x - c)^2}}.  
 $$  
 
+```c
 #include <stdio.h>\
 #include <math.h>
 
