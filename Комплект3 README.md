@@ -60,6 +60,7 @@ int main()
     return 0;  
 }  
 
+![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/3.2.bmp)
 
 
 ## 3.3: Транспонирование матрицы
