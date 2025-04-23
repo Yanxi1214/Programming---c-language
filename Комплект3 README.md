@@ -181,3 +181,6 @@ int main()
     printf("]\n");  
     return 0;  
 }  
+
+
+![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/3.5.bmp)
