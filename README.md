@@ -29,16 +29,16 @@
 ```c
 #include <stdio.h>
 
-int main() \
-{\
-    float a, b, sum;\
-    printf("Enter first number: ");\
-    scanf("%f", &a);\
-    printf("Enter second number: ");\
-    scanf("%f", &b);\
-    sum = a + b;\
-    printf("Sum: %.2f\n", sum);\
-    return 0;\
+int main() 
+{
+    float a, b, sum;
+    printf("Enter first number: ");
+    scanf("%f", &a);
+    printf("Enter second number: ");
+    scanf("%f", &b);
+    sum = a + b;
+    printf("Sum: %.2f\n", sum);
+    return 0;
 }
 
 ![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/1.2.bmp))
@@ -60,15 +60,15 @@ int main() \
 
 
 ```c
-#include <stdio.h>\
+#include <stdio.h>
 #include <math.h>
 
-int main() \
-{\
+int main() 
+{
     double x, y, sin_xy, numerator, denominator, result;\
-    printf("Enter x: ");\
-    scanf("%lf", &x);\
-    printf("Enter y: ");\
+    printf("Enter x: ");
+    scanf("%lf", &x);
+    printf("Enter y: ");
     scanf("%lf", &y);
     
     sin_xy = sin(x + y);
@@ -100,11 +100,11 @@ h(x) = -\frac{x - a}{\sqrt[3]{x^2 + a^2}} - \frac{4\sqrt[3]{(x^2 + b^2)^3}}{2 + 
 $$  
 
 ```c
-#include <stdio.h>\
+#include <stdio.h>
 #include <math.h>
 
-int main() \
-{\
+int main() 
+{
     double a, b, c, x, h;
     
     // Первый случай
@@ -128,7 +128,7 @@ int main() \
         / (2 + a + b + cbrt(pow(x - c, 2)));
     printf("Case 3: h(x) = %.4f\n", h);
     
-    return 0;\
+    return 0;
 }
 
 ![image](https://raw.githubusercontent.com/Yanxi1214/Programming---c-language/refs/heads/Laboratory-work-I/1.4.bmp)
