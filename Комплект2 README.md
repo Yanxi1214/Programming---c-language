@@ -33,6 +33,7 @@ $$
 | t              | int        | Момент времени (дни)         |
 
 
+```c
 #include <stdio.h>  
 #include <math.h>  
 
