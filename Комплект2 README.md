@@ -57,8 +57,8 @@ int main()
     }  
     return 0;  
 }  
-
-![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/capture_2.1.bmp)
+```
+![image](capture_2.1.PNg)
 
 
 
