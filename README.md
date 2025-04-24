@@ -26,7 +26,7 @@
 | b              | float     | Второе число |
 | sum            | float     | Сумма чисел  |
 
-```c
+```
 #include <stdio.h>
 
 int main() 
@@ -40,8 +40,8 @@ int main()
     printf("Sum: %.2f\n", sum);
     return 0;
 }
-
-![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/1.2.bmp))
+```
+![image](/1.2.png)
 
 
 
@@ -79,9 +79,9 @@ int main()
     printf("u(x, y) = %.4f\n", result);
     return 0;
 }
+```
 
-
-![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/1.3.bmp)
+![image](1.3.png)
 
 
 
