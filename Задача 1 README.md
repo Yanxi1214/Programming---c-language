@@ -3,9 +3,11 @@
 ## Задача 1 - Многоуровневое выделение памяти через указатели
 
 ### Постановка задачи
+
 Определите указатель `double ***pointer = NULL;` внутри `main()`. Инициализируйте его адресом указателя `double**`, который указывает на `double*`, а тот — на `double`. Запишите значение 2.0 в память через `pointer` и выведите его.
 
 ### Математическая модель
+
 pointer → double** → double* → double (2.0)
 
 ### Список идентификаторов
@@ -36,9 +38,7 @@ int main(void)
     free(dbl_value);
     free(ptr_to_dbl);
     return 0;
-}
+}\
 
 
-### Результаты
-![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-2/1.bmp)
-
+ 
