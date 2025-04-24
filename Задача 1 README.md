@@ -38,7 +38,7 @@ int main(void)
     free(dbl_value);
     free(ptr_to_dbl);
     return 0;
-}\
+}
 
 
  
