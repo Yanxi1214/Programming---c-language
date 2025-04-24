@@ -41,4 +41,4 @@ int main(void)
 }
 
 
- 
+ ![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-2/1.bmp)
