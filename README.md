@@ -102,7 +102,7 @@ $$
 ```c
 #include <stdio.h>
 #include <math.h>
-
+```
 int main() 
 {
     double a, b, c, x, h;
@@ -129,7 +129,8 @@ int main()
     printf("Case 3: h(x) = %.4f\n", h);
     
     return 0;
-}
+} 
+```
 
-![image](https://raw.githubusercontent.com/Yanxi1214/Programming---c-language/refs/heads/Laboratory-work-I/1.4.bmp)
+![image](1.4.png)
 
