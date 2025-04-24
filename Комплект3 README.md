@@ -15,7 +15,7 @@
 | y              | double[]   | Результирующий вектор |
 
 
-
+```c
 #include <stdio.h>  
 #define SIZE 5  
 
@@ -48,7 +48,7 @@ int main()
 | -------------- | ---------- | --------------- |
 | x              | int[]      | Исходный массив |
 
-
+```c
 #include <stdio.h>  
 #define SIZE 5  
 
@@ -92,7 +92,7 @@ A^{\text{T}} = \begin{bmatrix}
 \end{bmatrix}.  
 $$  
 
-
+```c
 #include <stdio.h>  
 
 int main() 
@@ -123,7 +123,7 @@ int main()
 | A              | float[][]  | Исходная матрица       |
 | sum            | float      | Сумма элементов строки |
 
-
+```c
 #include <stdio.h>  
 
 int main() 
@@ -161,7 +161,7 @@ int main()
 | key            | int	      | Текущий элемент    |
 
 
-
+```c
 #include <stdio.h>  
 #define SIZE 5  
 
