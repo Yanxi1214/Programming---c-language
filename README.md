@@ -8,7 +8,6 @@
 ### Математическая модель
 pointer → double** → double* → double (2.0)
 
-
 ### Список идентификаторов
 | Имя переменной | Тип данных       | Описание                     |
 |----------------|------------------|------------------------------|
@@ -40,6 +39,6 @@ int main(void)
 }
 
 
-
+### Результаты
 ![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-2/1.bmp)
 
