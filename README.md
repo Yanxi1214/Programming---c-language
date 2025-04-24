@@ -1,1 +1,40 @@
-# Programming---c-language
+# Лабораторная работа 2 - Указатели, арифметика указателей
+
+## Задача 1 - Многоуровневое выделение памяти через указатели
+
+### Постановка задачи
+Определите указатель `double ***pointer = NULL;` внутри `main()`. Инициализируйте его адресом указателя `double**`, который указывает на `double*`, а тот — на `double`. Запишите значение 2.0 в память через `pointer` и выведите его.
+
+### Математическая модель
+pointer → double** → double* → double (2.0)
+
+
+### Список идентификаторов
+| Имя переменной | Тип данных       | Описание                     |
+|----------------|------------------|------------------------------|
+| pointer        | double***        | Трехуровневый указатель      |
+| dbl_value      | double*          | Указатель на double          |
+| ptr_to_dbl     | double**         | Указатель на double*         |
+
+
+### Код 
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    double ***pointer = NULL;
+    double **ptr_to_dbl = (double**)malloc(sizeof(double*));
+    double *dbl_value = (double*)malloc(sizeof(double));
+    
+    *dbl_value = 2.0;
+    *ptr_to_dbl = dbl_value;
+    pointer = &ptr_to_dbl;
+    
+    printf("Значение: %.1f\n", ***pointer);
+    
+    free(dbl_value);
+    free(ptr_to_dbl);
+    return 0;
+}
