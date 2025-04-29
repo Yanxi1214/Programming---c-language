@@ -41,7 +41,7 @@ int main()
     return 0;
 }
 ```
-![image](/1.2.png)
+![image](1.2.png)
 
 
 
@@ -133,4 +133,5 @@ int main()
 ```
 
 ![image](1.4.png)
+
 
