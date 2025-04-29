@@ -34,8 +34,8 @@ int main()
     printf("]\n");  
     return 0;  
 }  
-\
-![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/3.1.bmp)
+```
+![image](3.1.png)
 
 
 
@@ -63,8 +63,8 @@ int main()
     printf("]\n");  
     return 0;  
 }  
-
-![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/3.2.bmp)
+```
+![image](3.2.png)
 
 
 
@@ -106,9 +106,9 @@ int main()
     }  
     return 0;  
 }  
+```
 
-
-![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/3.3.bmp)
+![image](3.3.png)
 
 
 
@@ -144,9 +144,9 @@ int main()
     }  
     return 0;  
 }  
+```
 
-
-![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/3.4.bmp)
+![image](3.4.png)
 
 
 ## 3.5: Сортировка вставками
@@ -185,6 +185,6 @@ int main()
     printf("]\n");  
     return 0;  
 }  
+```
 
-
-![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/3.5.bmp)
+![image](3.5.png)
