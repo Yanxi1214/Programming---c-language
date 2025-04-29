@@ -58,7 +58,7 @@ int main()
     return 0;  
 }  
 ```
-![image](capture_2.1.PNg)
+![image](capture_2.1.png)
 
 
 
