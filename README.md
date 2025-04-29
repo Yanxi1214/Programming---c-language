@@ -132,5 +132,5 @@ int main()
 } 
 ```
 
-![image](1.4.png.)
+![image](1.4.png)
 
