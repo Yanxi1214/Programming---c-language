@@ -103,7 +103,7 @@ int main()
     return 0;  
 }  
 ```
-![image](2.2.png.)
+![image](2.2.png)
 
 
 
