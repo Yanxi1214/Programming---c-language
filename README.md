@@ -17,8 +17,7 @@ pointer → double** → double* → double (2.0)
 | dbl_value      | double*          | Указатель на double          |
 | ptr_to_dbl     | double**         | Указатель на double*         |
 
-
-### Код 
+ 
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -49,7 +48,7 @@ int main(void)
 ### Постановка задачи
 Сложить два числа, используя указатели.
 
-### Код:
+
 ```c
 #include <stdio.h>
 
@@ -69,4 +68,4 @@ int main(void)
 ### Постановка задачи:
 Найти максимальное из двух чисел через указатели.
 
-### Код:
+
