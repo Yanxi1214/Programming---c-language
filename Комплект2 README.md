@@ -77,8 +77,7 @@ $$
 | n              | int        | Количество интервалов         |
 | h              | double     | Шаг интегрирования            |
 
-**Код**:
-
+```c
 #include <stdio.h>  
 #include <math.h>  
 
@@ -103,8 +102,8 @@ int main()
     printf("∫₀¹ e^(x+2) dx ≈ %.6f\n", sum);  
     return 0;  
 }  
-
-![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/2.2.bmp)
+```
+![image](2.2.png.)
 
 
 
@@ -123,8 +122,8 @@ P(0)=P(1)=P(2)=1,P(n)=P(n−2)+P(n−3).
 | p_prev3        | int        | P(n-3)         |
 | p_prev2        | int        | P(n-2)         |
 
-**Код**:
 
+```c
 #include <stdio.h>  
 
 int main() 
@@ -147,8 +146,8 @@ int main()
     }  
     return 0;  
 }  
-
-![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/2.3.bmp)
+```
+![image](2.3.png)
 
 
 
@@ -164,8 +163,8 @@ int main()
 | num            | int        | Введённое число |
 | sum            | int        | Сумма цифр      |
 
-**Код**:
 
+```c
 #include <stdio.h>  
 
 int main() 
@@ -180,5 +179,5 @@ int main()
     printf("Сумма цифр = %d. Программа завершена.\n", sum);  
     return 0;  
 }  
-
-![image](https://github.com/Yanxi1214/Programming---c-language/blob/Laboratory-work-I/2.4.bmp)
+```
+![image](2.4.png)
