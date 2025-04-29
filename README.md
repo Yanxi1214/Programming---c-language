@@ -84,8 +84,6 @@ int main()
 ![image](1.3.png)
 
 
-
-
 ## 1.4: Вычисление h(x)
 
 ### Параметры:
@@ -163,3 +161,30 @@ $$
 | T1             | double     | Период обращения Марса (дни  |
 | T2             | double     | Период обращения Земли (дни) |
 | t              | int        | Момент времени (дни)         |
+
+```c
+#include <stdio.h>  
+#include <math.h>  
+
+#define PI 3.1415926535  
+
+int main() 
+{  
+    double r1 = 227.9e6;  // Радиус орбиты Марса (км)  
+    double r2 = 149.6e6; // Радиус орбиты Земли (км)  
+    double T1 = 687.0;   // Период обращения Марса (дни)  
+    double T2 = 365.25;  // Период обращения Земли (дни)  
+    int t_max = 10;      // Время в днях  
+
+    for (int t = 0; t <= t_max; t++) 
+    {  
+        double w1 = 2 * PI / T1;  
+        double w2 = 2 * PI / T2;  
+        double x = r1 * cos(w1 * t) - r2 * cos(w2 * t);  
+        double y = r1 * sin(w1 * t) - r2 * sin(w2 * t);  
+        printf("t = %d дн: x = %.2f км, y = %.2f км\n", t, x, y);  
+    }  
+    return 0;  
+}  
+```
+![image](capture_2.1.png)
