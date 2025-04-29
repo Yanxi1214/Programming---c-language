@@ -212,4 +212,23 @@ $$
 double f(double x) 
 {  
     return exp(x + 2);  
+}
+
+int main() 
+{  
+    double a = 0.0, b = 1.0;  
+    int n = 1000;  
+    double h = (b - a) / n;  
+    double sum = 0.5 * (f(a) + f(b));  
+
+    for (int i = 1; i < n; i++) 
+    {  
+        sum += f(a + i * h);  
+    }  
+    sum *= h;  
+
+    printf("∫₀¹ e^(x+2) dx ≈ %.6f\n", sum);  
+    return 0;  
 }  
+```
+![image](2.2.png)
