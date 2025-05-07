@@ -128,7 +128,7 @@ int main()
 }
 ```
 
-![image](1.4.png)
+![image](capture_1.4.png)
 
 
 ## 2.1:Координаты Марсa
