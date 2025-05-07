@@ -103,29 +103,29 @@ int main()
 {
     double a, b, c, x, h;
     
-    // Первый случай
+    // Первый случай (Case 1)
     a = 0.12; b = 3.5; c = 2.4; x = 1.4;
-    h = -(x - a) / cbrt(pow(x, 2) + pow(a, 2)) 
-        - (4 * cbrt(pow(pow(x, 2) + pow(b, 2), 3))) 
-        / (2 + a + b + cbrt(pow(x - c, 2)));
+    h = -(x - a) / pow(x*x + a*a, 1.0/3.0) 
+        - (4 * pow(x*x + b*b, 3.0/4.0)) 
+        / (2 + a + b + pow((x - c)*(x - c), 1.0/3.0));
     printf("Case 1: h(x) = %.4f\n", h);
     
-    // Второй случай
-    x = 1.6;\
-    h = -(x - a) / cbrt(pow(x, 2) + pow(a, 2)) 
-        - (4 * cbrt(pow(pow(x, 2) + pow(b, 2), 3)))
-        / (2 + a + b + cbrt(pow(x - c, 2)));
+    // Второй случай (Case 2)
+    x = 1.6;
+    h = -(x - a) / pow(x*x + a*a, 1.0/3.0) 
+        - (4 * pow(x*x + b*b, 3.0/4.0)) 
+        / (2 + a + b + pow((x - c)*(x - c), 1.0/3.0));
     printf("Case 2: h(x) = %.4f\n", h);
     
-    // Третий случай
+    // Третий случай (Case 3)
     a = 0.27; b = 3.9; c = 2.8; x = 1.8;
-    h = -(x - a) / cbrt(pow(x, 2) + pow(a, 2))
-        - (4 * cbrt(pow(pow(x, 2) + pow(b, 2), 3)))
-        / (2 + a + b + cbrt(pow(x - c, 2)));
+    h = -(x - a) / pow(x*x + a*a, 1.0/3.0)
+        - (4 * pow(x*x + b*b, 3.0/4.0)) 
+        / (2 + a + b + pow((x - c)*(x - c), 1.0/3.0));
     printf("Case 3: h(x) = %.4f\n", h);
     
     return 0;
-} 
+}
 ```
 
 ![image](1.4.png)
