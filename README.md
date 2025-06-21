@@ -83,13 +83,15 @@ float magnitude(struct Vector3 v)
     return sqrt(v.x*v.x + v.y*v.y + v.z*v.z);
 }
 
-void print(struct Vector3 v) {
+void print(struct Vector3 v) 
+{
     printf("%s: (%.2f, %.2f, %.2f)\n", v.name, v.x, v.y, v.z);
 }
 
 int main() {
     struct Vector3 a = {"A", 1.0, 2.0, 3.0};
     struct Vector3 b = {"B", 4.0, 5.0, 6.0};
+
     print(a);
     print(b);
 
@@ -98,6 +100,7 @@ int main() {
     printf("Модуль A: %.2f\n", magnitude(a));
     return 0;
 }
+
 ```
 
 ![image](1.2.png)
