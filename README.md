@@ -52,7 +52,7 @@ int main()
 | x, y, z        | float      | Координаты вектора |
 | name           | char[]     | Имя вектора        |
 
-``c
+```c
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
@@ -111,3 +111,31 @@ int main() {
 ### Постановка задачи
 
 Реализовать exp(z) для комплексного z ∈ ℂ с использованием разложения в ряд.
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+typedef struct
+{
+    double real;
+    double imag;
+} Complex;
+
+Complex complexExp(Complex c)
+{
+    Complex result;
+    double exp_real = exp(c.real) * cos(c.imag);
+    double exp_imag = exp(c.real) * sin(c.imag);
+    result.real = exp_real;
+    result.imag = exp_imag;
+    return result;
+}
+
+int main() {
+    Complex z = {0.0, 1.0}; // Example: e^(i)
+    Complex res = complexExp(z);
+    printf("exp(z) = %.2f + %.2fi\n", res.real, res.imag);
+    return 0;
+}
+```
