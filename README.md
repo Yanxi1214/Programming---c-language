@@ -96,3 +96,5 @@ int main() {
     return 0;
 }
 ```
+
+![image](1.2.png)
