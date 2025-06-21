@@ -38,4 +38,4 @@ int main()
     return 0;
 }
 ```
-![image].(https://github.com/Yanxi1214/Programming---c-language/blob/1%D0%BE%D0%B1_%D0%98%D0%92%D0%A2-1/24_%D0%A7%D0%B6%D0%B0%D0%BD-%D0%96%D1%83%D0%B9%D1%8E%D0%B9_3/1.1.png)
+![image].(1.1.png)
