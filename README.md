@@ -255,7 +255,7 @@ int main()
 
 ## Комплект 2: Объединения и перечисления
 
-## Задача 2.1 
+## 2.1 
 
 ### Постановка задачи
 Напишите программу, которая использует указатель на некоторое объединение union.
@@ -331,3 +331,39 @@ int main()
     return 0;
 }
 ```
+
+![image](2.2.png)
+
+
+## 2.3 
+
+### Постановка задачи
+
+Создайте перечислимый тип данных (enum) для семи дней недели и распечатайте на экране его значения, как целые числа.
+
+### Список идентификаторов
+| Имя переменной | Тип данных |	Описание     |
+|----------------|------------|--------------|
+| Weekday        | enum	      | Перечисление |
+| day	         | int        |	Значение дня |
+
+```c
+#include <stdio.h>
+
+enum Weekday { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY };
+
+int main()
+{
+    enum Weekday today = SATURDAY;
+    
+    printf("Today is day number: %d\n", today);
+    for (int i = MONDAY; i <= SUNDAY; ++i)
+    {
+        printf("Day %d: %d\n", i, i);
+    }
+
+    return 0;
+}
+```
+
+![image](2.3.png)
