@@ -81,6 +81,7 @@ int main(void)
 }
 ```
 
+![image](3.png)
 
 ## Задача 4 - Динамический массив через арифметику указателей
 ### Постановка задачи:
@@ -106,3 +107,21 @@ int main(void) {
     return 0;
 }
 ```
+
+
+## Задача6
+```c
+#include <stdio.h>
+
+int main()
+{
+    int a = 1234567890;
+    char *p = (char*)&a;
+    for(size_t i = 0; i < sizeof(a); ++i)
+    {
+        printf("%d ", *(p + i));
+    }
+    return 0;
+}
+```
+![image](6.png)
