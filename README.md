@@ -106,6 +106,7 @@ int main() {
 ![image](1.2.png)
 
 
+
 ## 1.3
 
 ### Постановка задачи
@@ -139,3 +140,30 @@ int main() {
     return 0;
 }
 ```
+
+![image](1.3.png)
+
+
+ 
+## 1.4
+
+### Постановка задачи
+
+Использовать битовые поля для экономии памяти в структуре даты.
+
+```c
+#include <stdio.h>
+
+struct Date {
+    unsigned day : 5;   
+    unsigned month : 4;   
+    unsigned year : 12;   
+};
+
+int main() {
+    struct Date birthday = {15, 6, 1990};
+    printf("Дата рождения: %02u.%02u.%u\n", 
+           birthday.day, birthday.month, birthday.year);
+    printf("Размер структуры: %lu байт\n", sizeof(birthday));
+    return 0;
+}
