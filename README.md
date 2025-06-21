@@ -154,16 +154,98 @@ int main() {
 ```c
 #include <stdio.h>
 
-struct Date {
+struct Date
+{
     unsigned day : 5;   
     unsigned month : 4;   
     unsigned year : 12;   
 };
 
-int main() {
+int main()
+{
     struct Date birthday = {15, 6, 1990};
     printf("Дата рождения: %02u.%02u.%u\n", 
            birthday.day, birthday.month, birthday.year);
     printf("Размер структуры: %lu байт\n", sizeof(birthday));
     return 0;
 }
+```
+
+![image](1.4.png)
+
+
+
+## 1.5
+
+### Постановка задачи
+
+Реализовать в виде структур двунаправленный связный список и совершить отдельно его обход в прямом и обратном направлениях с распечаткой значений каждого элемента списка.
+
+### Список идентификаторов
+| Имя переменной | Тип данных |	Описание                     |
+|--------------- |------------|------------------------------|
+| value          | int	      | Значение элемента            |
+| next           | Node*	  | Указатель на следующий узел  |
+| prev	         | Node*	  | Указатель на предыдущий узел |
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct Node
+{
+    int data;
+    struct Node* prev;
+    struct Node* next;
+} Node;
+
+Node* createNode(int value)
+{
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    newNode->data = value;
+    newNode->prev = NULL;
+    newNode->next = NULL;
+    return newNode;
+}
+
+void traverseForward(Node* head)
+{
+    Node* temp = head;
+    while (temp != NULL)
+{
+        printf("%d ", temp->data);
+        temp = temp->next;
+    }
+    printf("\n");
+}
+
+void traverseBackward(Node* tail)
+{
+    Node* temp = tail;
+    while (temp != NULL)
+{
+        printf("%d ", temp->data);
+        temp = temp->prev;
+    }
+    printf("\n");
+}
+
+int main()
+{
+    Node* head = createNode(1);
+    Node* second = createNode(2);
+    Node* third = createNode(3);
+
+    head->next = second;
+    second->prev = head;
+    second->next = third;
+    third->prev = second;
+
+    printf("Forward traversal: ");
+    traverseForward(head);
+    printf("Backward traversal: ");
+    traverseBackward(third);
+
+    return 0;
+}
+```
