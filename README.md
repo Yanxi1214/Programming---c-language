@@ -38,4 +38,4 @@ int main()
     return 0;
 }
 ```
-![image].(1.1.png)
+![image](1.1.png)
