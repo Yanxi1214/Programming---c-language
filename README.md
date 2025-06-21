@@ -71,7 +71,8 @@ int main(void)
 ```c
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     int x = 10, y = 20;
     int *px = &x, *py = &y;
     int max = (*px > *py) ? *px : *py;
