@@ -249,3 +249,85 @@ int main()
     return 0;
 }
 ```
+![image](1.5.png)
+
+
+
+## Комплект 2: Объединения и перечисления
+
+## Задача 2.1 
+
+### Постановка задачи
+Напишите программу, которая использует указатель на некоторое объединение union.
+
+### Список идентификаторов
+|Имя переменной | Тип данных  |	Описание                 |
+|---------------|-----------  |--------------------------|
+| data          | union Data  |	Объединение с полями     |
+| ptr           | union Data* |	Указатель на объединение |
+
+```c
+#include <stdio.h>
+
+union Data
+{
+    int i;
+    float f;
+    char str[20];
+};
+
+int main() 
+{
+
+    union Data *dataPtr;
+    union Data data;
+
+    dataPtr = &data; 
+    dataPtr->i = 10;
+    printf("data.i: %d\n", dataPtr->i);
+
+    dataPtr->f = 220.5;
+    printf("data.f: %.1f\n", dataPtr->f);
+
+    strcpy(dataPtr->str, "C Programming");
+    printf("data.str: %s\n", dataPtr->str);
+
+    return 0;
+}
+```
+
+## Задача 2.2 
+
+### Постановка задачи
+
+Напишите программу, которая использует union для побайтовой распечатки типа unsigned long.
+
+```c
+#include <stdio.h>
+
+union BytePrinter
+{
+    unsigned long value;
+    unsigned char bytes[sizeof(unsigned long)];
+};
+
+void printBytes(union BytePrinter data)
+{
+    for (size_t i = 0; i < sizeof(unsigned long); ++i)
+{
+        printf("%02x ", data.bytes[i]);
+    }
+    printf("\n");
+}
+
+int main()
+{
+    union BytePrinter data;
+    data.value = 123456789UL;
+    
+    printf("Value as bytes: ");
+    printBytes(data);
+    
+    return 0;
+}
+```
