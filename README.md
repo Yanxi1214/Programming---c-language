@@ -91,7 +91,8 @@ int main(void)
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
+int main(void)
+{
     int n;
     printf("Введите размер массива: ");
     scanf("%d", &n);
