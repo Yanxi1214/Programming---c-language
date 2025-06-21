@@ -9,28 +9,32 @@
 Создать некоторую структуру с указателем на некоторую функцию в качестве поля. Вызвать эту функцию через имя переменной этой структуры и поле указателя на функцию.
 
 ### Список идентификаторов
-| Имя переменной | Тип данных |	Описание             |           
-|----------------|------------|----------------------|
-| funcPtr        | void (*)   |	Указатель на функцию |
-| s	             | struct     |	Экземпляр структуры  |
+| Имя переменной | Тип данных       | Описание             |           
+|----------------|------------------|----------------------|
+| funcPtr        | void (*)(void)   | Указатель на функцию |
+| s	             | struct           | Экземпляр структуры  |
 
 
 ```c
 #include <stdio.h>
 
-void greet()
+
+typedef struct
 {
-    printf("Hello from function pointer!\n");
+    void (*func)(void); 
+} MyStruct;
+
+
+void myFunction()
+{
+    printf("Hello from myFunction!\n");
 }
 
-struct FunctionHolder
+int main()
 {
-    void (*funcPtr);
-};
-
-int main() {
-    struct FunctionHolder s;
-    s.funcPtr = greet;
-    s.funcPtr(); 
+    MyStruct s;
+    s.func = myFunction; 
+    s.func(); 
     return 0;
 }
+```
